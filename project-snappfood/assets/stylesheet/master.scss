@@ -1,0 +1,266 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+body {
+    direction: rtl;
+    background-color: rgb(251, 251, 251);
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+
+    // height: 700vh;
+    >header {
+        width: 100%;
+        height: 80px;
+        // border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        // margin: 0 90px;
+
+
+        >figure {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            // margin: 0 20px;
+
+            >img {
+                width: auto;
+                height: 60%;
+                object-fit: contain;
+                margin-top: 15px;
+                padding: 6px;
+                cursor: pointer;
+            }
+
+            >figcaption {
+                width: auto;
+                height: 100%;
+                font-size: 16px;
+                font-weight: bolder;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 50px;
+            }
+        }
+
+        >section {
+            width: 55%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            transition: 1s;
+
+
+            >input {
+                width: 450px;
+                height: 56%;
+                background-color: rgb(233, 233, 233);
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+                margin-right: 50px;
+                margin-top: 11px;
+                caret-color:rgb(255, 15, 171) ;
+                &::placeholder {
+                    font-size: 18px;
+                    color: rgb(0, 0, 0);
+                    opacity: .6;
+                }
+                &:focus{
+                    transition: 1s;
+                    background-color: white;
+                    transition-duration: 1s;
+                    zoom: 113%;
+                    border: 3px solid black;
+                }
+            }
+        }
+
+        >div {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            >a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+
+                >i {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+
+            >h4 {
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+                padding: 5px;
+
+                >i {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    >nav {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #cac9c9;
+
+        >figure {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            margin: 0 20px;
+
+            >img {
+                // width: 100%;
+                width: 37%;
+                object-fit: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 0;
+                cursor: pointer;
+            }
+
+            >figcaption {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                font-size: 14px;
+                color: rgb(117, 117, 117);
+            }
+        }
+    }
+
+    >.menu {
+        height: 420px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 110px !important;
+
+        >h2 {
+            font-size: 21px;
+            width: 100%;
+            height: 100px;
+            padding: 20px;
+        }
+
+        >div {
+            width: 100%;
+            height: 320px;
+            display: flex;
+            flex-wrap: wrap;
+
+            >figure {
+                width: 15%;
+                height: 50%;
+                border-radius: 10px;
+                position: relative;
+
+                >img {
+                    width: 82%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    border: 1px solid rgb(255, 255, 255);
+                }
+
+                >figcaption {
+                    width: 100px;
+                    height: 30px;
+                    position: absolute;
+                    font-weight: bolder;
+                    bottom: 38%;
+                    right: -5px;
+                    background-color: white;
+                    border-radius: 10px 0 0 0px;
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid rgb(195, 195, 195);
+                    cursor: pointer;
+                    display: flex;
+                    padding: 0 13px;
+                    transition: .5s;
+
+                    >i {
+                        font-size: 12px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        color: rgb(255, 15, 171);
+                    }
+
+                    &:hover {
+                        background-color: #e5e4e4;
+                        >i {
+                            color: rgb(121, 4, 80);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    aside{
+        width: 100%;
+        height: 200%;
+        >strong{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-family:cursive;
+            >h1{
+                font-size: 50px;
+                font-family: cursive;
+                position: relative;
+                z-index: 1111 !important;
+                transition: 2s;
+                &::before{
+                    width: 100%;
+                    height: 10px;
+                    background-color: rgba(255, 15, 171, 0.596);
+                    content: '';
+                    position: absolute;
+                    bottom: 0;left: 0;
+                    z-index: -1;
+                    transition: 2s;
+                }
+                &:hover::before{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
